@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
-st.markdown(#GithubIcon {
-  visibility: hidden;
-})
 # Load your data and preprocessed variables (replace these paths with your actual data paths)
 with open('recomender.pkl', 'rb') as file:
     pt, similarity_score, popular_new_df = pickle.load(file)
